@@ -1,0 +1,254 @@
+[gd_scene load_steps=12 format=4 uid="uid://bmobfupi74xss"]
+
+[ext_resource type="Texture2D" uid="uid://bxmfq5njrnlce" path="res://Green.png" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://w7a7bidjp05u" path="res://Terrain (16x16).png" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://dlhkr74k1x0vo" path="res://frog.gd" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://ble7mmjdx73rv" path="res://Frog.png" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bienvxy5t4dic" path="res://Light.jpeg" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://c1yqb633bkidt" path="res://bulb.png" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://citx4t0rxd4oo" path="res://area_2d.gd" id="6_272bh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5vw27"]
+size = Vector2(25, 27.5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
+texture = ExtResource("2_1bvp3")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_272bh"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_7mycd")
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_272bh"]
+
+[node name="Main" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1143.0
+offset_bottom = 659.0
+texture = ExtResource("1_h2yge")
+stretch_mode = 1
+
+[node name="Frog" type="CharacterBody2D" parent="."]
+scale = Vector2(2, 2)
+script = ExtResource("3_1bvp3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Frog"]
+position = Vector2(41.5, 277.5)
+texture = ExtResource("3_lquwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Frog"]
+position = Vector2(41, 280.25)
+shape = SubResource("RectangleShape2D_5vw27")
+
+[node name="Camera2D" type="Camera2D" parent="Frog"]
+unique_name_in_owner = true
+position = Vector2(41.5, 281)
+scale = Vector2(0.2, 0.2)
+zoom = Vector2(4, 4)
+
+[node name="PointLight2D" type="PointLight2D" parent="Frog"]
+unique_name_in_owner = true
+position = Vector2(42, 282)
+scale = Vector2(7.40476, 6.3997)
+texture = ExtResource("5_lquwl")
+texture_scale = 0.01
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+scale = Vector2(2, 2)
+tile_map_data = PackedByteArray("AAAAABMAAAAIAAEAAAABABMAAAAHAAAAAAACABMAAAAIAAAAAAADABMAAAAGAAAAAAAEABMAAAAHAAAAAAAFABMAAAAIAAAAAAAGABMAAAAGAAAAAAAHABMAAAAHAAAAAAAIABMAAAAIAAAAAAAJABMAAAAGAAAAAAAKABMAAAAHAAAAAAALABMAAAAIAAAAAAAMABMAAAAGAAAAAAANABMAAAAHAAAAAAAOABMAAAAIAAAAAAAPABMAAAAGAAAAAAAQABMAAAAHAAAAAAARABMAAAAIAAAAAAASABMAAAAGAAAAAAATABMAAAAHAAAAAAAUABMAAAAIAAAAAAAVABMAAAAGAAAAAAAWABMAAAAHAAAAAAAXABMAAAAIAAAAAAAYABMAAAAGAAAAAAAZABMAAAAHAAAAAAAaABMAAAAIAAAAAAAbABMAAAAGAAAAAAAcABMAAAAHAAAAAAAdABMAAAAIAAAAAAAeABMAAAAGAAAAAAAfABMAAAAHAAAAAAAgABMAAAAIAAAAAAAhABMAAAAGAAAAAAAiABMAAAAHAAAAAAAjABMAAAAGAAEAAAAAABQAAAAIAAIAAAABABQAAAAHAAEAAAACABQAAAAIAAEAAAADABQAAAAGAAEAAAAEABQAAAAHAAEAAAAFABQAAAAIAAEAAAAGABQAAAAGAAEAAAAHABQAAAAHAAEAAAAIABQAAAAIAAEAAAAJABQAAAAGAAEAAAAKABQAAAAHAAEAAAALABQAAAAIAAEAAAAMABQAAAAGAAEAAAANABQAAAAHAAEAAAAOABQAAAAIAAEAAAAPABQAAAAGAAEAAAAQABQAAAAHAAEAAAARABQAAAAIAAEAAAASABQAAAAGAAEAAAATABQAAAAHAAEAAAAUABQAAAAIAAEAAAAVABQAAAAGAAEAAAAWABQAAAAHAAEAAAAXABQAAAAIAAEAAAAYABQAAAAGAAEAAAAZABQAAAAHAAEAAAAaABQAAAAIAAEAAAAbABQAAAAGAAEAAAAcABQAAAAHAAEAAAAdABQAAAAIAAEAAAAeABQAAAAGAAEAAAAfABQAAAAHAAEAAAAgABQAAAAIAAEAAAAhABQAAAAGAAEAAAAiABQAAAAHAAEAAAAjABQAAAAGAAIAAAAAABIAAAAIAAEAAAAAABEAAAAIAAEAAAAAABAAAAAIAAEAAAAAAA8AAAAIAAEAAAAAAA4AAAAIAAEAAAAAAA0AAAAIAAEAAAAAAAwAAAAIAAEAAAAAAAsAAAAIAAEAAAAAAAoAAAAIAAEAAAAAAAkAAAAIAAEAAAAAAAgAAAAIAAEAAAAAAAcAAAAIAAEAAAAAAAYAAAAIAAEAAAAAAAUAAAAIAAEAAAAAAAQAAAAIAAEAAAAAAAMAAAAIAAEAAAAAAAIAAAAIAAEAAAAAAAEAAAAIAAEAAAABAAAAAAAHAAIAAAACAAAAAAAHAAIAAAADAAAAAAAHAAIAAAAEAAAAAAAHAAIAAAAFAAAAAAAHAAIAAAAGAAAAAAAHAAIAAAAHAAAAAAAHAAIAAAAIAAAAAAAHAAIAAAAJAAAAAAAHAAIAAAAKAAAAAAAHAAIAAAALAAAAAAAHAAIAAAAMAAAAAAAHAAIAAAANAAAAAAAHAAIAAAAOAAAAAAAHAAIAAAAPAAAAAAAHAAIAAAAQAAAAAAAHAAIAAAARAAAAAAAHAAIAAAASAAAAAAAHAAIAAAATAAAAAAAHAAIAAAAUAAAAAAAHAAIAAAAVAAAAAAAHAAIAAAAWAAAAAAAHAAIAAAAXAAAAAAAHAAIAAAAbAAAAAAAHAAIAAAAaAAAAAAAHAAIAAAAZAAAAAAAHAAIAAAAYAAAAAAAHAAIAAAAcAAAAAAAHAAIAAAAdAAAAAAAHAAIAAAAeAAAAAAAHAAIAAAAfAAAAAAAHAAIAAAAgAAAAAAAHAAIAAAAhAAAAAAAHAAIAAAAiAAAAAAAHAAIAAAAjAAEAAAAGAAEAAAAjAAIAAAAGAAEAAAAjAAMAAAAGAAEAAAAjAAQAAAAGAAEAAAAjAAUAAAAGAAEAAAAjAAYAAAAGAAEAAAAjAAcAAAAGAAEAAAAjAAgAAAAGAAEAAAAjAAkAAAAGAAEAAAAjAAoAAAAGAAEAAAAjAAsAAAAGAAEAAAAjAAwAAAAGAAEAAAAjAA0AAAAGAAEAAAAjAA4AAAAGAAEAAAAjAA8AAAAGAAEAAAAjABAAAAAGAAEAAAAjABEAAAAGAAEAAAAjABIAAAAGAAEAAAAAAAAAAAAIAAIAAAAjAAAAAAAGAAIAAAAEAA8AAAASAAEAAAACAAwAAAASAAEAAAAFAAkAAAASAAEAAAAIAAsAAAASAAEAAAAJAA8AAAASAAEAAAANABAAAAASAAEAAAAQAA0AAAASAAEAAAAVABAAAAASAAEAAAAXAAoAAAASAAEAAAAUAA0AAAASAAEAAAAZAA0AAAASAAEAAAAZABEAAAASAAEAAAAeAAkAAAASAAEAAAAdAA8AAAASAAEAAAAhAAwAAAASAAEAAAAaAAcAAAASAAEAAAASAAUAAAASAAEAAAAOAAgAAAASAAEAAAASAAkAAAASAAEAAAAIAAYAAAASAAEAAAACAAQAAAASAAEAAAAgAAQAAAASAAEAAAARAAEAAAARAAAAAAASAAEAAAASAAAAAAATAAEAAAATAAAAAAA=")
+tile_set = SubResource("TileSet_272bh")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(455, 58)
+rotation = -3.10801
+script = ExtResource("6_272bh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(-129.5, 5.5)
+scale = Vector2(0.0605469, 0.0566406)
+texture = ExtResource("6_7mycd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-130, 5)
+shape = SubResource("CapsuleShape2D_272bh")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="Area2D"]
+unique_name_in_owner = true
+color = Color(0.149475, 0.149475, 0.149475, 1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 513.0
+offset_right = 144.0
+offset_bottom = 536.0
+text = "Find the Light!"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 726.0
+offset_top = 6.0
+offset_right = 800.0
+offset_bottom = 29.0
+text = "Good job!"
+
+[connection signal="body_entered" from="Area2D" to="Frog" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
